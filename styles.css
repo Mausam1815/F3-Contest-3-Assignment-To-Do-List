@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+}
+section {
+    margin-bottom: 20px;
+}
+#add-item {
+    display: flex;
+    justify-content: space-between;
+}
+input[type="text"] {
+    margin-bottom: 10px;
+    width: 450px;
+    height: 35px;
+}
+input[type="date"],
+select {
+    margin-bottom: 10px;
+    width: 350px;
+    height: 35px;
+}
+
+#add-item button {
+    padding: 5px 10px;
+    cursor: pointer;
+    height: 35px;
+    width: 150px;
+    background-color: #000;
+    color: white;
+}
+
+.todo-item {
+    border: 1px solid #000;
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task-details {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-item.overdue {
+    border: 3px solid;
+    border-color: red;
+}
+
+#todayTasks .todo-item,
+#futureTasks .todo-item {
+    background-color: black;
+    color: white;
+}
+#task-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #252424;
+    color: white;
+}
